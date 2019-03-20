@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 4</title>
+    <style>
+    body{
+        margin: 2%;
+        border: 1px solid black;
+        background-color: #b3b3b3;
+    }
+    #image{
+        line-height:325px;
+        width: 388px;
+        height: 325px;
+        border:5px solid black;
+        margin:0 auto;
+        background-repeat: no-repeat;
+        color:#FFFFFF;
+        text-align: center;
+        background-color: #8e68ff;
+        background-size: 100%;
+        margin-bottom:25px;
+        font-size:150%;
+    }
+    .preview{
+        width:10%;
+        margin-left:17%;
+        border: 10px solid black;
+    }
+    img{
+        width:95%;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+
+    <script>
+    function upDate(image){
+      document.getElementById('image').style.backgroundImage="url('"+image.src+"')";
+      document.getElementById('image').innerHTML= image.alt;
+    }
+
+    function unDo(){
+      document.getElementById('image').style.backgroundImage="url()";
+      document.getElementById('image').innerHTML= "Hover/Tab over an image below."
+    }
+    </script>
+</head>
+
+<body>
+    <h1>Challenge 4</h1>
+        <div id = "image">
+            Hover or tab over/into an image below.
+        </div>
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview"
+            alt = "Tree"
+            src = "https://static.wixstatic.com/media/b3b884_76d657c52b3b44c28fd8d399ef0179da~mv2_d_1684_2114_s_2.png"
+            onfocus = "upDate(this)"
+            onblur = "unDo()"
+            onmouseover="upDate(this)"
+            onmouseleave="unDo()">
+
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview"
+            alt = "Seeds"
+            src = "https://static.wixstatic.com/media/b3b884_52f5b20bfe224e9ea416a576ee41c769~mv2.jpg"
+            onfocus = "upDate(this)"
+            onblur = "unDo()"
+            onmouseover="upDate(this)"
+            onmouseleave="unDo()">
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "1"
+            src = "https://static.wixstatic.com/media/b3b884_9488f4416ebb4f8bab3463798e37fb7d~mv2.jpg"
+            alt = "fruits"
+            onfocus = "upDate(this)"
+            onblur = "unDo()"
+            onmouseover="upDate(this)"
+            onmouseleave="unDo()">
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "1"
+            src = "https://static.wixstatic.com/media/b3b884_331e8fdece46417392a45f6835496d74~mv2.png"
+            alt = "Paper Tree"
+            onfocus = "upDate(this)"
+            onblur = "unDo()"
+            onmouseover="upDate(this)"
+            onmouseleave="unDo()">
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "1"
+            src = "https://static.wixstatic.com/media/b3b884_dcffd73c7e444bbcb594269b1b35b72c~mv2_d_2338_1700_s_2.jpg"
+            alt = "Denseness"
+            onfocus = "upDate(this)"
+            onblur = "unDo()"
+            onmouseover="upDate(this)"
+            onmouseleave="unDo()">
+
+        <!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
+        <img class = "preview" tabindex = "1"
+            src = "https://static.wixstatic.com/media/b3b884_4cf941831941491d878ef43b1177d6b5~mv2_d_2338_1700_s_2.jpg"
+            alt = "Dispersion"
+            onfocus = "upDate(this)"
+            onblur = "unDo()"
+            onmouseover="upDate(this)"
+            onmouseleave="unDo()">
+
+</body>
+</html>
